@@ -1,0 +1,74 @@
+{
+  "OPENAI_ONLY": {
+    "performance_metrics": {
+      "total_return": 15.895775676022406,
+      "annual_return": 5.199535556104173,
+      "sharpe_ratio": 0.30688419825778357,
+      "max_drawdown": -5.714818736375234,
+      "volatility": 7.167314474290911
+    },
+    "daily_data": {
+      "daily_equity": [],
+      "daily_returns": [],
+      "rolling_volatility": []
+    },
+    "trade_analysis": {
+      "total_trades": 0,
+      "trade_details": []
+    },
+    "metadata": {
+      "simulation_start": "",
+      "simulation_end": "",
+      "llm_mode": "OPENAI_ONLY",
+      "universe_size": 0
+    }
+  },
+  "ANTHROPIC_ONLY": {
+    "performance_metrics": {
+      "total_return": 18.01084154381094,
+      "annual_return": 5.8552942895993665,
+      "sharpe_ratio": 0.48507155249014605,
+      "max_drawdown": -6.604924261572331,
+      "volatility": 5.886336304286511
+    },
+    "daily_data": {
+      "daily_equity": [],
+      "daily_returns": [],
+      "rolling_volatility": []
+    },
+    "trade_analysis": {
+      "total_trades": 0,
+      "trade_details": []
+    },
+    "metadata": {
+      "simulation_start": "",
+      "simulation_end": "",
+      "llm_mode": "ANTHROPIC_ONLY",
+      "universe_size": 0
+    }
+  },
+  "BOTH": {
+    "performance_metrics": {
+      "total_return": 4.720096785200512,
+      "annual_return": 1.597350014470722,
+      "sharpe_ratio": -0.31423676537654355,
+      "max_drawdown": -5.084694379647484,
+      "volatility": 4.463672428172149
+    },
+    "daily_data": {
+      "daily_equity": [],
+      "daily_returns": [],
+      "rolling_volatility": []
+    },
+    "trade_analysis": {
+      "total_trades": 0,
+      "trade_details": []
+    },
+    "metadata": {
+      "simulation_start": "",
+      "simulation_end": "",
+      "llm_mode": "BOTH",
+      "universe_size": 0
+    }
+  }
+}

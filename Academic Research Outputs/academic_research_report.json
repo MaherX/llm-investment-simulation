@@ -1,0 +1,213 @@
+{
+  "study_metadata": {
+    "experiment_date": "2025-08-31T17:23:04.914581",
+    "simulation_period": "2021-10-01 to 2024-12-31",
+    "universe_size": 500,
+    "initial_capital": 100000000,
+    "methodology": "Large Language Model Investment Decisions Comparison",
+    "llm_models": {
+      "openai": "GPT-4",
+      "anthropic": "Claude-3.5-Sonnet",
+      "combined": "Consensus of GPT-4 and Claude-3.5-Sonnet"
+    }
+  },
+  "performance_metrics": {
+    "OPENAI_ONLY": {
+      "returns": {
+        "total_return_pct": 15.895775676022406,
+        "annualized_return_pct": 5.199535556104173,
+        "excess_return_vs_sp500_pct": -5.0771328550778705,
+        "excess_return_vs_berkshire_pct": -7.638118560075103
+      },
+      "risk_metrics": {
+        "volatility_pct": 716.7314474290911,
+        "max_drawdown_pct": -5.714818736375234,
+        "var_95_pct": 0,
+        "skewness": 0,
+        "kurtosis": 0
+      },
+      "risk_adjusted_metrics": {
+        "sharpe_ratio": 0.30688419825778357,
+        "sortino_ratio": 0.4504102894333898,
+        "calmar_ratio": 0.9098338540483802,
+        "treynor_ratio_sp500": 0.10003663217168769,
+        "jensen_alpha_sp500": 0.005514145664629717
+      },
+      "trading_statistics": {
+        "total_trades": 17,
+        "win_rate_pct": 100.0,
+        "profit_factor": 0,
+        "avg_trade_duration_days": 45.0,
+        "turnover_rate_annual": 0.8
+      },
+      "portfolio_metrics": {
+        "avg_number_of_holdings": 8.5,
+        "avg_position_size_pct": 12.5,
+        "sector_concentration_herfindahl": 0.15,
+        "cash_utilization_pct": 85.0
+      },
+      "benchmark_analysis": {
+        "sp500_comparison": {
+          "sp500_annual_return": 0.10279611235495123,
+          "sp500_total_return": 0.32925146224451796,
+          "relative_return": -0.050771328550778705,
+          "correlation": 0.7832715141665934,
+          "beta": 0.31983639259396257,
+          "information_ratio": -0.3984244569848763,
+          "tracking_error": 0.12743025098157046
+        },
+        "berkshire_comparison": {
+          "llm_cumulative": 15.895775676022406,
+          "berkshire_cumulative": 42.121202660089274,
+          "llm_annual_return": 5.199535556104173,
+          "berkshire_annual_return": 12.837654116179277,
+          "relative_cumulative": -26.225426984066868,
+          "relative_performance": -7.638118560075103,
+          "llm_volatility": 7.167314474290911,
+          "berkshire_volatility": 17.403513688743416,
+          "correlation": 0.5248602026901943,
+          "beta": 0.2161539442551675,
+          "information_ratio": -0.5111262020738648
+        },
+        "market_beta_sp500": 0.31983639259396257,
+        "correlation_with_sp500": 0.7832715141665934,
+        "tracking_error_vs_sp500_pct": 12.743025098157046
+      }
+    },
+    "ANTHROPIC_ONLY": {
+      "returns": {
+        "total_return_pct": 18.01084154381094,
+        "annualized_return_pct": 5.8552942895993665,
+        "excess_return_vs_sp500_pct": -4.420992750540753,
+        "excess_return_vs_berkshire_pct": -6.98235982657991
+      },
+      "risk_metrics": {
+        "volatility_pct": 588.633630428651,
+        "max_drawdown_pct": -6.604924261572331,
+        "var_95_pct": 0,
+        "skewness": 0,
+        "kurtosis": 0
+      },
+      "risk_adjusted_metrics": {
+        "sharpe_ratio": 0.48507155249014605,
+        "sortino_ratio": 0.7449250667541237,
+        "calmar_ratio": 0.8865043803250952,
+        "treynor_ratio_sp500": 0.2228245236743812,
+        "jensen_alpha_sp500": 0.024227617572757223
+      },
+      "trading_statistics": {
+        "total_trades": 15,
+        "win_rate_pct": 100.0,
+        "profit_factor": 0,
+        "avg_trade_duration_days": 45.0,
+        "turnover_rate_annual": 0.8
+      },
+      "portfolio_metrics": {
+        "avg_number_of_holdings": 8.5,
+        "avg_position_size_pct": 12.5,
+        "sector_concentration_herfindahl": 0.15,
+        "cash_utilization_pct": 85.0
+      },
+      "benchmark_analysis": {
+        "sp500_comparison": {
+          "sp500_annual_return": 0.10279611235495123,
+          "sp500_total_return": 0.32925146224451796,
+          "relative_return": -0.04420992750540753,
+          "correlation": 0.5159295362330175,
+          "beta": 0.17301929904417523,
+          "information_ratio": -0.28770295720479994,
+          "tracking_error": 0.15366518278064453
+        },
+        "berkshire_comparison": {
+          "llm_cumulative": 18.01084154381094,
+          "berkshire_cumulative": 42.121202660089274,
+          "llm_annual_return": 5.8552942895993665,
+          "berkshire_annual_return": 12.837654116179277,
+          "relative_cumulative": -24.110361116278334,
+          "relative_performance": -6.98235982657991,
+          "llm_volatility": 5.886336304286511,
+          "berkshire_volatility": 17.403513688743416,
+          "correlation": 0.36279443040739334,
+          "beta": 0.12270683178657449,
+          "information_ratio": -0.43038730760342636
+        },
+        "market_beta_sp500": 0.17301929904417523,
+        "correlation_with_sp500": 0.5159295362330175,
+        "tracking_error_vs_sp500_pct": 15.366518278064452
+      }
+    },
+    "BOTH": {
+      "returns": {
+        "total_return_pct": 4.720096785200512,
+        "annualized_return_pct": 1.597350014470722,
+        "excess_return_vs_sp500_pct": -8.6813726913735,
+        "excess_return_vs_berkshire_pct": -11.240304101708555
+      },
+      "risk_metrics": {
+        "volatility_pct": 446.3672428172149,
+        "max_drawdown_pct": -5.084694379647484,
+        "var_95_pct": 0,
+        "skewness": 0,
+        "kurtosis": 0
+      },
+      "risk_adjusted_metrics": {
+        "sharpe_ratio": -0.31423676537654355,
+        "sortino_ratio": -0.4573936361469952,
+        "calmar_ratio": 0.31414867742384633,
+        "treynor_ratio_sp500": -0.03928913520643115,
+        "jensen_alpha_sp500": -0.012511760033822896
+      },
+      "trading_statistics": {
+        "total_trades": 9,
+        "win_rate_pct": 100.0,
+        "profit_factor": 0,
+        "avg_trade_duration_days": 45.0,
+        "turnover_rate_annual": 0.8
+      },
+      "portfolio_metrics": {
+        "avg_number_of_holdings": 8.5,
+        "avg_position_size_pct": 12.5,
+        "sector_concentration_herfindahl": 0.15,
+        "cash_utilization_pct": 85.0
+      },
+      "benchmark_analysis": {
+        "sp500_comparison": {
+          "sp500_annual_return": 0.10279611235495123,
+          "sp500_total_return": 0.32925146224451796,
+          "relative_return": -0.08681372691373501,
+          "correlation": 0.4029988588889185,
+          "beta": 0.10248379950683392,
+          "information_ratio": -0.5334250653387489,
+          "tracking_error": 0.16274774575619988
+        },
+        "berkshire_comparison": {
+          "llm_cumulative": 4.720096785200512,
+          "berkshire_cumulative": 42.121202660089274,
+          "llm_annual_return": 1.597350014470722,
+          "berkshire_annual_return": 12.837654116179277,
+          "relative_cumulative": -37.40110587488876,
+          "relative_performance": -11.240304101708555,
+          "llm_volatility": 4.463672428172149,
+          "berkshire_volatility": 17.403513688743416,
+          "correlation": 0.2673179167845758,
+          "beta": 0.06856199478151942,
+          "information_ratio": -0.6702133694514473
+        },
+        "market_beta_sp500": 0.10248379950683392,
+        "correlation_with_sp500": 0.4029988588889185,
+        "tracking_error_vs_sp500_pct": 16.274774575619986
+      }
+    }
+  },
+  "statistical_analysis": {
+    "methodology": "Performance comparison using daily returns",
+    "sample_size_days": 0,
+    "significance_tests": {
+      "note": "T-tests and Wilcoxon rank-sum tests recommended for return differences",
+      "suggested_confidence_level": 0.05
+    }
+  },
+  "decision_analysis": {},
+  "risk_metrics": {},
+  "benchmark_comparisons": {}
+}
