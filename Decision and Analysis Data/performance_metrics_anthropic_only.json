@@ -1,0 +1,43 @@
+{
+  "total_return": 18.01084154381094,
+  "annual_return": 5.8552942895993665,
+  "volatility": 5.886336304286511,
+  "sharpe_ratio": 0.48507155249014605,
+  "sortino_ratio": 0.7449250667541237,
+  "calmar_ratio": 0.8865043803250952,
+  "max_drawdown": -6.604924261572331,
+  "win_rate": 100.0,
+  "profit_factor": 0,
+  "total_trades": 15,
+  "final_value": 117784770.82235788,
+  "initial_value": 99808432.243601,
+  "berkshire_comparison": {
+    "llm_cumulative": 18.01084154381094,
+    "berkshire_cumulative": 42.121202660089274,
+    "llm_annual_return": 5.8552942895993665,
+    "berkshire_annual_return": 12.837654116179277,
+    "relative_cumulative": -24.110361116278334,
+    "relative_performance": -6.98235982657991,
+    "llm_volatility": 5.886336304286511,
+    "berkshire_volatility": 17.403513688743416,
+    "correlation": 0.36279443040739334,
+    "beta": 0.12270683178657449,
+    "information_ratio": -0.43038730760342636
+  },
+  "sp500_comparison": {
+    "sp500_annual_return": 0.10279611235495123,
+    "sp500_total_return": 0.32925146224451796,
+    "relative_return": -0.04420992750540753,
+    "correlation": 0.5159295362330175,
+    "beta": 0.17301929904417523,
+    "information_ratio": -0.28770295720479994,
+    "tracking_error": 0.15366518278064453
+  },
+  "yearly_returns": {
+    "2022": 3.262340117284257,
+    "2023": -1.6768337254064791,
+    "2024": 16.784736859989223
+  },
+  "average_convergence": 0.0,
+  "llm_mode": "ANTHROPIC_ONLY"
+}
