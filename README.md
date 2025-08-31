@@ -76,20 +76,24 @@ llm-investment-simulation/
 ├── requirements.txt                # Python dependencies specification
 ├── .env.example                    # Environment variables template
 ├── README.md                       # Documentation
-└── data/
-    ├── simulation_data_complete.pkl        # Cached market data
-    ├── portfolio_history_*.csv             # Portfolio evolution by mode
-    ├── trades_*.csv                        # Transaction records by mode
-    ├── daily_equity_*.csv                  # Daily portfolio values
-    ├── performance_metrics_*.json          # Performance analysis
-    ├── berkshire_convergence_*.csv         # Decision alignment analysis
-    ├── decision_log_*.json                 # LLM decisions with rationale
-    └── academic_data/
-        ├── *_bias_corrections.csv          # Behavioral bias corrections
-        ├── *_decision_quality.csv          # Decision quality metrics
-        ├── *_theme_analysis.csv            # Theme participation analysis
-        ├── *_summary_statistics.json       # Aggregated statistics
-        └── *_academic_report.md            # Comprehensive report
+├── simulation_data_complete.pkl    # Cached market data
+├── llm_investment_full_system.log  # System execution log
+│
+├── Portfolio Performance Data (per mode: openai_only, anthropic_only, both)
+│   ├── portfolio_history_*.csv     # Daily portfolio values and holdings
+│   ├── trades_*.csv                # Transaction records with P&L
+│   ├── daily_equity_*.csv          # Daily equity curve data
+│   └── berkshire_convergence_*.csv # Decision alignment with Berkshire
+│
+├── Decision and Analysis Data (per mode)
+│   ├── decision_log_*.json         # LLM decisions with rationale
+│   └── performance_metrics_*.json  # Performance analysis metrics
+│
+└── Academic Research Outputs
+    ├── academic_analysis.csv              # Statistical analysis summary
+    ├── academic_analysis_detailed.json    # Detailed analysis data
+    ├── academic_research_report.json      # Publication-ready statistics
+    └── comparison_results.json            # Head-to-head LLM comparison
 ```
 
 ## System Components
@@ -157,25 +161,26 @@ MAX_RESEARCH_PER_DATE = 10  # Number of stocks for deep research
 DECISION_DATES = ['2022-01-15', '2022-03-01', '2022-04-30', ...]
 ```
 
-## Output Data Structure
+## Output Data Description
 
-### Performance Metrics
-- `portfolio_history_{mode}.csv`: Daily portfolio values and holdings composition
-- `trades_{mode}.csv`: Complete transaction records with profit/loss calculations
-- `performance_metrics_{mode}.json`: Comprehensive performance analysis
-- `daily_equity_{mode}.csv`: Daily equity curve data
+### Portfolio Performance Files (per mode)
+- **`portfolio_history_{mode}.csv`**: Complete portfolio evolution including daily values, cash positions, and holdings composition
+- **`trades_{mode}.csv`**: All executed transactions with entry/exit prices, quantities, and realized gains/losses
+- **`daily_equity_{mode}.csv`**: Time series of daily portfolio values for risk metric calculations
+- **`berkshire_convergence_{mode}.csv`**: Analysis of decision overlap with Berkshire Hathaway's actual trades
 
-### Decision Analysis
-- `berkshire_convergence_{mode}.csv`: Decision alignment analysis with Berkshire Hathaway
-- `decision_log_{mode}.json`: Complete LLM decisions with detailed rationale
+### Decision Analysis Files (per mode)
+- **`decision_log_{mode}.json`**: Complete record of LLM investment decisions including rationale, market context, and risk assessments
+- **`performance_metrics_{mode}.json`**: Comprehensive performance statistics including returns, risk metrics, and benchmark comparisons
 
-### Academic Analysis
-- `academic_data/*_bias_corrections.csv`: Behavioral bias correction events
-- `academic_data/*_decision_quality.csv`: Comprehensive decision quality metrics
-- `academic_data/*_theme_analysis.csv`: Market theme participation analysis
-- `academic_data/*_academic_report.md`: Complete research report
-- `comparison_results.json`: Head-to-head LLM comparison analysis
-- `academic_research_report.json`: Publication-ready statistical analysis
+### Academic Research Outputs
+- **`academic_analysis.csv`**: Summary statistics suitable for statistical software import
+- **`academic_analysis_detailed.json`**: Comprehensive data including daily returns, rolling volatility, and trade-level analysis
+- **`academic_research_report.json`**: Publication-ready statistical analysis with significance tests
+- **`comparison_results.json`**: Direct comparison of all three LLM configurations
+
+### System Logs
+- **`llm_investment_full_system.log`**: Complete execution log for debugging and audit purposes
 
 ## Academic Usage
 
