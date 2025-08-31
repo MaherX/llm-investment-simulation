@@ -69,7 +69,7 @@ python llm_investment_simulation.py
 
 ```
 llm-investment-simulation/
-├── llm_investment_simulation.py    # Primary simulation system (v7.0)
+├── llm_investment_simulation.py    # Primary simulation system (v21.0)
 ├── stock_cache.py                  # Market data caching infrastructure
 ├── data_filter.py                  # Historical data filtering utilities
 ├── academic_data_collector.py      # Academic metrics collection system
